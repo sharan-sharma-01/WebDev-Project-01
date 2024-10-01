@@ -1,0 +1,125 @@
+@font-face {
+  font-family: bigerside;
+  src: url(BigersideExpanded-7O9Z4.otf);
+  font-family: newyork;
+  src: url(NewYorkMedium-Medium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  background-color: #000f1b;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#box1 {
+  width: 1200px;
+  height: 400px;
+  background-color: #000f1b;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#name {
+  background-color: #000f1b;
+  width: 650px;
+  height: 80px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  color: white;
+  font-size: 50px;
+  font-family: "bigerside";
+}
+#typewrite {
+  text-decoration: underline;
+  color: rgb(205, 229, 85);
+  border: transparent dotted 2px;
+  box-shadow: #ffffff;
+  animation: animate 50ms ease-in-out infinite alternate;
+}
+#effect {
+  width: 50%;
+  height: 50px;
+  background-color: #000f1b;
+  color: black;
+  position: absolute;
+  top: 115px;
+  left: 35px;
+  color: white;
+  font-size: 30px;
+  font-family: "newyork";
+}
+@keyframes animate {
+  from {
+    text-shadow: 0 0 20px rgb(205, 229, 85);
+  }
+  to {
+    text-shadow: 0 0 30px rgb(205, 229, 85), 0 0 10px rgb(205, 229, 85);
+  }
+}
+#bar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  top: 170px;
+  left: -23px;
+  display: flex;
+  background-color: #000f1b;
+}
+#items {
+  color: white;
+}
+#items a {
+  text-decoration: none;
+  color: white;
+  margin-left: 55px;
+  font-size: 21px;
+  transition: color ease-in 0.1s;
+  font-family: "newyork";
+}
+#items a:hover {
+  color: rgb(10, 191, 10);
+}
+#items a.active {
+  color: rgb(10, 191, 10);
+}
+#links {
+  width: 120px;
+  height: 30px;
+  background-color: transparent;
+  position: absolute;
+  top: 220px;
+  left: 30px;
+  display: flex;
+}
+#git {
+  background-image: url(github-mark.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+#link {
+  background-image: url(icons8-linkedin-50.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-left: 18px;
+}
+#gmail {
+  background-image: url(icons8-gmail-50.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
